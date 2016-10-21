@@ -1,3 +1,0 @@
-IssuerAuthenticationData:  
-IssuerScriptTemplate1:  
-IssuerScriptTemplate2:  
