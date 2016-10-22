@@ -21,7 +21,16 @@ For more information on the Worldpay Total product offering, check out our [gett
 ##Installation
 The Windows IPC SDK is implemented as a Windows Service and accompanying driver for the card reader. These components are located in the /cxpi directory and should be downloadd to your machine before installing.
 
-We will soon be providing a full fledged installer executable that will perform this task for you. You are free to distribute the installer with your application. We also provide a Windows batch file (**WorldpayMW\_Service\_Install.bat**), located in the root directory of this repository) that will install the components as well. This allows you the freedfom in incorporate the files into your own installer when the time comes.
+We will soon be providing a full fledged installer executable that will perform this task for you. You are free to distribute the installer with your application. For now, please use our batch installer.
+
+
+###Important: Installing Using the Batch Script
+For now, We are providing a Windows batch file that will install the components as well. You will have a couple of manual steps that are critical to getting things setup.
+
+ 1. Pull down the files from the CXPI directory.
+ 2. There are two files that need to be marked as 'unblocked' - **SPOS.VerifoneLib.dll** and **.\DEVICEPLUGINS\SPOS.VerifoneLib.dll**. Right click on each of these files to bring up the properties page and select the button labeled **'Unblock'** at the bottom.
+ 3. Run the file **.\WorldpayMW\_Service\_Install.bat** in **Admin mode**.
+
 
 Note: The driver uses com9 for communicating with the card reader. You will need to make sure that this port is available and resolve any conflicts in your installation if not.
 
@@ -50,7 +59,7 @@ The endpoint for your transactions is different than the REST documentation. Cur
 
     https://gwapi.demo.securenet.com/api/Payments/XXX (where xxx is the function)
 
-When using the IPC SDK, the endpoint needs to point to localhost rather than a remote server. You do this by replacing the first part of the url to localhost:9063
+When using the IPC SDK, the endpoint needs to point to localhost rather than a remote server. You do this by replacing the first part of the url to localhost:8081
 
     localhost:9063/api/Payments/XXX (where xxx is the function)
     
