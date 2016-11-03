@@ -1,4 +1,4 @@
-#Worldpay Total Windows IPC SDK (BETA)
+#Worldpay Total Windows IPC SDK
 The Integrated Payment Client SDK (IPC SDK) for Windows is a wonderful way for you to develop Windows applications that utilize the Worldpay Total APIs. This library takes care of all of the communications with a card reader, freeing you to concentrate on your business logic. Since all of the card data transfer is isolated from you, you never have to worry about EMV certification.
 
 For more information on the Worldpay Total product offering, check out our [getting started] (https://www.worldpay.com/us/developers/apidocs/reference.html) pages.
