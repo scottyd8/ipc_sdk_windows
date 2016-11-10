@@ -17,7 +17,7 @@ For more information on the Worldpay Total product offering, check out our [gett
 
 | Platform           | Supported Devices|
 |:------------------ |:----------------:|
-| Windows 8 and later| Verifone VX 805  |
+| Windows 7 and later| Verifone VX 805  |
  
 ##Installation
 The Windows IPC SDK is implemented as a Windows Service and accompanying driver for the card reader. These components are located in the /cxpi directory and should be downloadd to your machine before installing.
