@@ -61,14 +61,14 @@ The **developerApplication** object has one additional field called **integratio
 When you set the integrationType to 1, you no longer need to fill in the card information. For instance, if you make an *authorize* request, you only need to fill in the *amount* and make the call. The SDK will fill in the rest and send it to the server for processing.
 
 
-###2. localhost:8081
+###2. endpoint
 The endpoint for your transactions is different than the REST documentation. Currently all of the endpoints have the form:  
 
     https://gwapi.demo.securenet.com/api/Payments/XXX (where xxx is the function)
 
-When using the IPC SDK, the endpoint needs to point to localhost rather than a remote server. You do this by replacing the first part of the url to localhost:8081
+When using the IPC SDK, the endpoint needs to point to https://wptipc.worldpay.us:61100.
 
-    localhost:8081/api/Payments/XXX (where xxx is the function)
+   https://wptipc.worldpay.us:61100/api/Payments/XXX (where xxx is the function)
     
 
 ##Worldpay Total Developer Resources
